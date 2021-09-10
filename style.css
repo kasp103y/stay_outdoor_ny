@@ -235,7 +235,8 @@ nav {
   flex-flow: wrap;
 }
 
-nav button {
+nav button,
+a {
   background: none;
   border: none;
   color: #fff;
@@ -249,8 +250,14 @@ nav button {
   cursor: pointer;
   border-radius: 0.2rem;
 }
-nav button:hover {
+nav button:hover,
+a:hover {
   outline-offset: 0.125rem;
+}
+
+.logo_nav {
+  display: flex;
+  justify-content: space-around;
 }
 
 .valgt {
