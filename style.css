@@ -12,17 +12,13 @@ img {
   display: block;
 }
 
-.width nav {
-  position: sticky;
-  top: 20px;
-}
-
 .container img {
   object-fit: cover;
 }
+/*Produkt billeder*/
 
 header {
-  padding: 0.5rem;
+  padding: 2rem;
   background-color: #1c676a;
   position: sticky;
   top: 0;
@@ -77,6 +73,12 @@ img {
   padding: 2rem;
   border-radius: 0.5rem;
 }
+
+.width .filter_nav {
+  position: sticky;
+  top: 20px;
+}
+/* nav-bar/filtereing på produktside */
 
 /* .front {
   display: grid;
