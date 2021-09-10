@@ -97,7 +97,8 @@ img {
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
-.container {
+.container,
+.container_forside {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 2rem;
@@ -334,7 +335,8 @@ nav button:hover {
     margin: 2rem;
   }
 
-  .front {
+  .front,
+  .container_forside {
     display: block;
   }
 }
