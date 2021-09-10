@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+main {
+  max-width: 1500px;
+  margin: 5rem auto;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -67,8 +72,6 @@ img {
 }
 
 .width {
-  max-width: 1500px;
-  margin: 5rem auto;
   background-color: #1c676aa1;
   padding: 2rem;
   border-radius: 0.5rem;
