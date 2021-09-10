@@ -25,8 +25,6 @@ img {
 header {
   padding: 2rem;
   background-color: #1c676a;
-  position: sticky;
-  top: 0;
 }
 
 header nav ul {
@@ -80,6 +78,7 @@ img {
 .width .filter_nav {
   position: sticky;
   top: 20px;
+  background-color: #1c676a;
 }
 /* nav-bar/filtereing på produktside */
 
