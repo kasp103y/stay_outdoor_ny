@@ -77,15 +77,17 @@ function vis() {
   });
 }
 
-headingOne.addEventListener("click", openPopup);
-buttonLuk.addEventListener("click", buttonClose);
+const navMenu = document.querySelector(".nav_menu");
+const burger = document.querySelector(".hamburger");
 
-function openPopup() {
-  //console.log("Tjek heading");
-  popUp.style.opacity = "1";
-  popUp.style.pointerEvents = "all";
-}
-function buttonClose() {
-  popUp.style.opacity = "0";
-  popUp.style.pointerEvents = "none";
+//window.addEventListener("load", sidenVises);
+//function sidenVises() {
+//  console.log("SidenVises");
+//}
+
+burger.addEventListener("click", mobil);
+
+function mobil() {
+  burger.classList.toggle("open");
+  navMenu.classList.toggle("open");
 }
