@@ -354,7 +354,7 @@ nav button:hover {
   padding: 10px;
   margin: 10px;
 }
-.imgLeftArticle {
+.img_left_article {
   gap: 15px;
   padding: 5px;
   margin: 10px;
@@ -387,13 +387,13 @@ img {
 }
 
 @media (min-width: 800px) {
-  .omSide section {
+  .om_side section {
     background-color: #e4ededb6;
     border-radius: 20px;
     padding: 20px;
     margin: 1em;
   }
-  .imgLeftArticle {
+  .img_left_article {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -401,13 +401,13 @@ img {
     padding: 1em;
     margin: 3em;
   }
-  .imgLeft {
+  .img_left {
     grid-column: 1/2;
   }
-  .textRight {
+  .text_right {
     grid-column: 2/3;
   }
-  .textLeftArticle {
+  .text_left_article {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -415,11 +415,11 @@ img {
     padding: 1em;
     margin: 3em;
   }
-  .textLeft {
+  .text_left {
     grid-column: 1/2;
     grid-row: 1/2;
   }
-  .imgRight {
+  .img_right {
     grid-column: 2/3;
   }
 }
