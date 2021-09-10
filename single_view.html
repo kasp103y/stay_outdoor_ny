@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STAY OUTDOOR</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <article class="logo">
+        <h3 class="navn_logo">STAY OUTDOOR</h3>
+
+        <img src="lillelogo_hvid.svg" alt="" />
+      </article>
+
+      <nav>
+        <button class="back">Tilbage</button>
+      </nav>
+    </header>
+    <main>
+      <section class="container" id="single_container">
+        <article class="outdoor_content" id="single_content">
+          <h2 class="single_h2"></h2>
+          <img class="vandre_img" src="" alt="" />
+          <p class="langbeskrivelse"></p>
+        </article>
+      </section>
+    </main>
+    <footer></footer>
+    <script>
+      const headingOne = document.querySelector("h1");
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const id = urlParams.get("id");
+      //console.log(id);
+      let vandreElement;
+
+      //const header = document.querySelector("header h2");
+      const url = "https://outdoor-0753.restdb.io/rest/stayoutdoor";
+      const options = { headers: { "x-apikey": "6139e63e43cedb6d1f97eee7" } };
+
+      document.addEventListener("DOMContentLoaded", hentData);
+
+      async function hentData() {
+        //Promise - data lover program at komme med date, imen det køre videre
+        const result = await fetch(url + id, options);
+        vandreElement = await result.json();
+        console.log(vandreElement);
+        vis();
+      }
+
+      function vis() {
+        document.querySelector(".single_content").textContent =
+          vandreElement.navn;
+
+        document.querySelector(".langbeskrivelse").textContent =
+          vandreElement.langbeskrivelse;
+
+        document.querySelector("img").src = vandreElement.billede;
+      }
+
+      document.querySelector(".back").addEventListener("click", () => {
+        window.history.back();
+      });
+    </script>
+  </body>
+</html>
