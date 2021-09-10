@@ -140,6 +140,13 @@ img {
   padding: 0.2rem;
 }
 
+a {
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+}
+
 h1 {
   text-align: center;
   color: #fff;
@@ -235,8 +242,7 @@ nav {
   flex-flow: wrap;
 }
 
-nav button,
-a {
+nav button {
   background: none;
   border: none;
   color: #fff;
@@ -250,8 +256,7 @@ a {
   cursor: pointer;
   border-radius: 0.2rem;
 }
-nav button:hover,
-a:hover {
+nav button:hover {
   outline-offset: 0.125rem;
 }
 
@@ -321,17 +326,6 @@ a:hover {
   p {
     font-size: 1rem;
     line-height: 1.7rem;
-  }
-
-  .bestil {
-    font-size: 1.2rem;
-    outline: none;
-    border-bottom: 0.25rem solid #ea6226;
-    padding: 0.2rem;
-  }
-
-  .ret {
-    font-size: 0.8rem;
   }
 }
 
