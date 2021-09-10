@@ -340,3 +340,79 @@ nav button:hover {
     display: block;
   }
 }
+/* *************************** Om side *************************** */
+.omSide section {
+  background-color: #e4ededb6;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+.imgLeftArticle {
+  gap: 15px;
+  padding: 5px;
+  margin: 10px;
+}
+.textLeftArticle {
+  gap: 15px;
+  padding: 5px;
+  margin: 10px;
+}
+.omSide h2 {
+  text-align: center;
+  font-size: 4.5vw;
+  margin: 2em;
+  color: white;
+  /* font-family: Baron Neue Bold; */
+}
+.omSide p,
+h3 {
+  color: black;
+}
+.omSide img {
+  max-width: 50vw;
+  height: auto;
+  /* border-radius: 30px; */
+}
+.omSide p,
+h3,
+img {
+  padding: 5px;
+}
+
+@media (min-width: 800px) {
+  .omSide section {
+    background-color: #e4ededb6;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 1em;
+  }
+  .imgLeftArticle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1em;
+    padding: 1em;
+    margin: 3em;
+  }
+  .imgLeft {
+    grid-column: 1/2;
+  }
+  .textRight {
+    grid-column: 2/3;
+  }
+  .textLeftArticle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1em;
+    padding: 1em;
+    margin: 3em;
+  }
+  .textLeft {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .imgRight {
+    grid-column: 2/3;
+  }
+}
