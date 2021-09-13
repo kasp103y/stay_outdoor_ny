@@ -26,6 +26,8 @@ img {
 header {
   padding: 2rem;
   background-color: #0f0f0e;
+  position: sticky;
+  top: 0%;
 }
 footer {
   background-color: #0f0f0e;
@@ -34,6 +36,7 @@ footer {
 .ikoner {
   display: flex;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 header nav ul {
@@ -92,9 +95,6 @@ img {
 }
 
 .filter_nav {
-  position: sticky;
-  top: 20px;
-
   padding: 2rem;
 }
 
@@ -256,7 +256,7 @@ nav button:hover {
   justify-content: center;
 }
 
-#popup {
+/* #popup {
   width: 90vw;
 
   opacity: 0;
@@ -275,7 +275,7 @@ nav button:hover {
 
 #popup article h2 {
   color: black;
-}
+} */
 
 @media (max-width: 600px) {
   nav button {
