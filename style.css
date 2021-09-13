@@ -55,6 +55,10 @@ header nav ul {
 .logo img {
   width: 6rem;
 }
+.logo img:hover path {
+  fill: #f29c2b;
+  stroke: #f29c2b;
+}
 
 .logo h3 {
   color: white;
@@ -218,19 +222,21 @@ nav button {
   background: none;
   border: none;
   color: #fff;
-  padding: 0.2rem;
+  padding: 0.2rem 0.4rem;
   text-align: center;
   text-decoration: none;
   font-size: 1rem;
-  transition: 100ms ease-in;
-  outline: 0.125rem solid #966d4e;
-  background-color: #966d4e;
+  transition: 250ms ease-in;
+
+  background-color: #f29c2b;
   font-family: "Bebas Neue";
   cursor: pointer;
   border-radius: 0.2rem;
 }
 nav button:hover {
-  outline-offset: 0.125rem;
+  box-shadow: rgba(0, 0, 0, 0.349) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .logo_nav {
@@ -241,10 +247,8 @@ nav button:hover {
 
 .valgt {
   background-color: white;
-  color: #0f0f0e;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  color: #f29c2b;
 }
 
 .mad_img {
@@ -398,7 +402,7 @@ img {
   width: 2rem;
   height: 0.25rem;
   margin: 0.25rem auto;
-  transition: 0.3s ease-in-out;
+  transition: ease-out 250ms;
   background-color: #fff;
   border-radius: 4px;
 }
@@ -418,14 +422,18 @@ img {
   font-weight: 400;
   color: #fff;
   font-family: "Oswald", sans-serif;
-  border-left: 0.125rem solid #fff;
-  border-right: 0.125rem solid #fff;
+
   padding: 0 0.5rem;
   transition: ease-out 250ms;
 }
 
+.nav_link:hover {
+  color: #f29c2b;
+  border-bottom: 0.25rem solid #f29c2b;
+}
+
 .nav_menu {
-  position: absolute;
+  position: fixed;
   left: -100%;
   top: 6.5rem;
   flex-direction: column;
@@ -447,6 +455,13 @@ img {
   display: block;
   cursor: pointer;
   transition: ease-out 250ms;
+}
+
+.hamburger:hover {
+  margin: 0 0.25rem;
+}
+.hamburger:hover .bar {
+  background-color: #f29c2b;
 }
 
 .hamburger.open .bar:nth-child(2) {
