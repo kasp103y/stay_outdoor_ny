@@ -31,6 +31,10 @@ footer {
   background-color: #0f0f0e;
   padding: 2rem;
 }
+.ikoner {
+  display: flex;
+  justify-content: center;
+}
 
 header nav ul {
   display: flex;
@@ -327,17 +331,7 @@ nav button:hover {
   padding: 5px;
   margin: 10px;
 }
-.omSide h2 {
-  text-align: center;
-  font-size: 4.5vw;
-  margin: 2em;
-  color: white;
-  /* font-family: Baron Neue Bold; */
-}
-.omSide p,
-h3 {
-  color: black;
-}
+
 /* .omSide img {
   max-width: 50vw;
   height: auto;
@@ -355,11 +349,6 @@ img {
     font-size: 2rem;
   }
 
-  .om_side section {
-    border-radius: 20px;
-    padding: 20px;
-    margin: 1em;
-  }
   .img_left_article {
     display: grid;
     grid-template-columns: 1fr 1fr;
