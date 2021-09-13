@@ -169,7 +169,7 @@ h1 {
 h2 {
   text-align: center;
   margin: 2em;
-  font-size: 2rem;
+  font-size: 3.2rem;
   font-family: "Bebas Neue", cursive;
   color: white;
 }
@@ -179,7 +179,7 @@ h3 {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 700;
 
-  color: #1c676a;
+  color: #0f0f0e;
 }
 
 footer p {
@@ -196,7 +196,7 @@ p {
 }
 
 .single_h2 {
-  color: #1c676a;
+  color: #0f0f0e;
   text-shadow: none;
 }
 
