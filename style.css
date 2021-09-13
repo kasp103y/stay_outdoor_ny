@@ -86,11 +86,13 @@ img {
   transition: 0.5ms ease-in;
 }
 
-.width {
+.width,
+#single_content {
+  margin: 1rem;
   background-image: linear-gradient(
     to bottom right,
-    rgba(255, 255, 255, 0.657),
-    rgba(128, 128, 128, 0.692)
+    rgba(255, 255, 255, 0.753),
+    rgba(128, 128, 128, 0.726)
   );
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -172,7 +174,7 @@ h1 {
 
 h2 {
   text-align: center;
-  margin: 2em;
+  margin: 1.5rem;
   font-size: 3.2rem;
   font-family: "Bebas Neue", cursive;
   color: white;
@@ -205,7 +207,6 @@ p {
 }
 
 #single_container {
-  margin: 6rem;
   display: flex;
   justify-content: center;
 }
@@ -218,14 +219,14 @@ nav {
   margin: 0.5rem 0;
 }
 
-nav button {
+button {
   background: none;
   border: none;
   color: #fff;
   padding: 0.2rem 0.4rem;
   text-align: center;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 2rem;
   transition: 250ms ease-in-out;
 
   background-color: #f29c2b;
@@ -233,10 +234,14 @@ nav button {
   cursor: pointer;
   border-radius: 0.2rem;
 }
-nav button:hover {
+button:hover {
   box-shadow: rgba(0, 0, 0, 0.349) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+nav button {
+  font-size: 2rem;
 }
 
 .logo_nav {
@@ -260,30 +265,10 @@ nav button:hover {
   justify-content: center;
 }
 
-/* #popup {
-  width: 90vw;
-
-  opacity: 0;
-  pointer-events: none;
-  background-color: white;
-  border-radius: 0.5rem;
-  position: fixed;
-  top: 0;
-  padding: 2rem;
-  margin: 5rem auto;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  transition: 500ms ease-in-out;
-}
-
-#popup article h2 {
-  color: black;
-} */
-
 @media (max-width: 600px) {
   nav button {
     outline: none;
+    font-size: 1.2rem;
   }
 
   h1 {
