@@ -41,7 +41,7 @@ header nav ul {
 }
 
 .logo img {
-  width: 4rem;
+  width: 6rem;
 }
 
 .logo h3 {
@@ -56,6 +56,7 @@ body {
   background-image: url(baggrund.jpg);
   background-attachment: fixed;
   background-position: 51% 71%;
+  background-size: cover;
 }
 
 img {
@@ -70,15 +71,17 @@ img {
 }
 
 .width {
-  background-color: #1c676aa1;
-  padding: 2rem;
+  background-image: url(blur.svg);
   border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.width .filter_nav {
+.filter_nav {
   position: sticky;
   top: 20px;
-  background-color: #1c676a;
+
   padding: 2rem;
 }
 /* nav-bar/filtereing på produktside */
@@ -110,11 +113,6 @@ img {
   padding: 2rem;
   margin: 2rem;
   border-radius: 0.5rem;
-  background-image: url(blur.svg);
-
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 /* .menu:nth-child(odd) {
@@ -137,13 +135,6 @@ img {
   box-shadow: none;
 }
 
-.pris {
-  border-bottom: 0.25rem solid #ea6226;
-
-  display: inline-block;
-  padding: 0.2rem;
-}
-
 a {
   font-size: 2rem;
   color: #fff;
@@ -152,24 +143,18 @@ a {
 }
 
 h1 {
-  text-align: center;
   color: #fff;
-  font-size: 5rem;
+  font-size: 10rem;
   font-family: "Bebas Neue", cursive;
   cursor: pointer;
   transition: 250ms ease-in-out;
-}
-
-h1:hover {
-  text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  color: #fff;
+  word-wrap: break-word;
+  width: min-content;
 }
 
 h2 {
   text-align: center;
-  color: #fff;
+  color: #1c676a;
   font-size: 2rem;
   font-family: "Bebas Neue", cursive;
 }
@@ -194,13 +179,9 @@ p {
   font-size: 1.4rem;
   line-height: 2.5rem;
 }
-.ret {
-  text-transform: capitalize;
-  font-size: 1rem;
-}
 
 .single_h2 {
-  color: #ea6226;
+  color: #1c676a;
   text-shadow: none;
 }
 
@@ -210,52 +191,25 @@ p {
   justify-content: center;
 }
 
-.bestil,
-#popup button {
-  background: none;
-  border: none;
-  color: #ea6226;
-  padding: 0.5rem;
-  text-align: center;
-  text-decoration: none;
-  font-size: 2rem;
-  transition: 100ms ease-in;
-  outline: 0.125rem solid #ea6226;
-  font-family: "Bebas Neue";
-  margin-top: 2rem;
-  cursor: pointer;
-}
-
-.bestil {
-  margin-left: 2rem;
-}
-
-.bestil:hover,
-#popup button:hover {
-  background-color: #ea6226;
-
-  color: #fff;
-}
-
 nav {
   display: flex;
   justify-content: space-around;
   padding: 0 1rem;
   gap: 1rem;
-  margin: 1rem 0;
-  flex-flow: wrap;
+  margin: 0.5rem 0;
 }
 
 nav button {
   background: none;
   border: none;
   color: #fff;
-  padding: 0.2rem;
+
   text-align: center;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
   transition: 100ms ease-in;
-  outline: 0.125rem solid #fff;
+  outline: 0.125rem solid #1c676a;
+  background-color: #1c676a;
   font-family: "Bebas Neue";
   cursor: pointer;
   border-radius: 0.2rem;
@@ -310,7 +264,6 @@ nav button:hover {
 
 @media (max-width: 600px) {
   nav button {
-    font-size: 1.5rem;
     outline: none;
   }
 
@@ -318,7 +271,7 @@ nav button:hover {
     font-size: 3rem;
   }
   h2 {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
   h3 {
     font-size: 1.6rem;
@@ -387,6 +340,11 @@ img {
 }  */
 
 @media (min-width: 800px) {
+  /* Knap størrelse i desktop */
+  nav button {
+    font-size: 2rem;
+  }
+
   .om_side section {
     background-color: #e4ededb6;
     border-radius: 20px;
@@ -471,7 +429,7 @@ img {
 .nav_menu {
   position: absolute;
   left: -100%;
-  top: 7rem;
+  top: 6.5rem;
   flex-direction: column;
   background-color: #1c676a;
   width: 100%;

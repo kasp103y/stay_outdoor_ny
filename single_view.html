@@ -14,11 +14,11 @@
     />
   </head>
   <body>
-    <header class="header">
+     <header class="header">
       <article class="logo">
-        <h3 class="navn_logo"><a href="index.html">STAY OUTDOOR</a></h3>
+         <a href="index.html"><img src="lillelogo_hvid.svg" alt="" /></a>
         <div class="logo_nav">
-          <img src="lillelogo_hvid.svg" alt="" />
+         
           <nav class="nav_bar">
             <!-- <a href="index.html" class="logo">PORTFOLIO</a> -->
             <div class="hamburger">
@@ -37,12 +37,13 @@
               <li class="nav_item">
                 <a href="omOs.html" class="nav_link">OM OS</a>
               </li>
-            </ul>
+              
           </nav>
         </div>
       </article>
     </header>
     <main>
+      <button class="back">Tilbage</button>
       <section class="container" id="single_container">
         <article class="outdoor_content" id="single_content">
           <h2 class="single_h2"></h2>
@@ -83,9 +84,9 @@
         document.querySelector(".vandre_img").src = vandreElement.billede;
       }
 
-      // document.querySelector(".back").addEventListener("click", () => {
-      //   window.history.back();
-      // });
+      document.querySelector(".back").addEventListener("click", () => {
+        window.history.back();
+      });
     </script>
   </body>
 </html>
