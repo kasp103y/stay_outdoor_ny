@@ -164,9 +164,10 @@ h1 {
 
 h2 {
   text-align: center;
-
+  margin: 2em;
   font-size: 2rem;
   font-family: "Bebas Neue", cursive;
+  color: white;
 }
 h3 {
   margin-bottom: 1rem;
