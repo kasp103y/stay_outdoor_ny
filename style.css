@@ -226,7 +226,7 @@ nav button {
   text-align: center;
   text-decoration: none;
   font-size: 1rem;
-  transition: 250ms ease-in;
+  transition: 250ms ease-in-out;
 
   background-color: #f29c2b;
   font-family: "Bebas Neue";
@@ -424,7 +424,7 @@ img {
   font-family: "Oswald", sans-serif;
 
   padding: 0 0.5rem;
-  transition: ease-out 250ms;
+  transition: ease-in-out 250ms;
 }
 
 .nav_link:hover {
@@ -454,7 +454,7 @@ img {
 .hamburger {
   display: block;
   cursor: pointer;
-  transition: ease-out 250ms;
+  transition: ease-in-out 250ms;
 }
 
 .hamburger:hover {
