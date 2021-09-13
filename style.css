@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #0f0f0e;
 }
 
 main {
@@ -24,7 +25,11 @@ img {
 
 header {
   padding: 2rem;
-  background-color: #1c676a;
+  background-color: #0f0f0e;
+}
+footer {
+  background-color: #0f0f0e;
+  padding: 2rem;
 }
 
 header nav ul {
@@ -71,7 +76,11 @@ img {
 }
 
 .width {
-  background-image: url(blur.svg);
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.657),
+    rgba(128, 128, 128, 0.692)
+  );
   border-radius: 0.5rem;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -150,11 +159,13 @@ h1 {
   transition: 250ms ease-in-out;
   word-wrap: break-word;
   width: min-content;
+  line-height: 8.5rem;
+  margin-bottom: 5rem;
 }
 
 h2 {
   text-align: center;
-  color: #1c676a;
+
   font-size: 2rem;
   font-family: "Bebas Neue", cursive;
 }
@@ -203,13 +214,13 @@ nav button {
   background: none;
   border: none;
   color: #fff;
-
+  padding: 0.2rem;
   text-align: center;
   text-decoration: none;
   font-size: 1rem;
   transition: 100ms ease-in;
-  outline: 0.125rem solid #1c676a;
-  background-color: #1c676a;
+  outline: 0.125rem solid #966d4e;
+  background-color: #966d4e;
   font-family: "Bebas Neue";
   cursor: pointer;
   border-radius: 0.2rem;
@@ -226,7 +237,7 @@ nav button:hover {
 
 .valgt {
   background-color: white;
-  color: #1c676a;
+  color: #0f0f0e;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -431,7 +442,7 @@ img {
   left: -100%;
   top: 6.5rem;
   flex-direction: column;
-  background-color: #1c676a;
+  background-color: #0f0f0e;
   width: 100%;
   height: 100vh;
   text-align: center;
