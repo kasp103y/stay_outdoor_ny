@@ -375,16 +375,16 @@ nav button:hover {
 h3 {
   color: black;
 }
-.omSide img {
+/* .omSide img {
   max-width: 50vw;
   height: auto;
-  /* border-radius: 30px; */
+  /* border-radius: 30px; 
 }
-.omSide p,
+ .omSide p,
 h3,
 img {
   padding: 5px;
-}
+}  */
 
 @media (min-width: 800px) {
   .om_side section {
@@ -423,6 +423,8 @@ img {
     grid-column: 2/3;
   }
 }
+
+/* BURGER MENU*/
 
 .nav_bar {
   display: flex;
@@ -466,14 +468,10 @@ img {
   transition: ease-out 250ms;
 }
 
-#desktop_only {
-  display: none;
-}
-
 .nav_menu {
   position: absolute;
   left: -100%;
-  top: 8rem;
+  top: 7rem;
   flex-direction: column;
   background-color: #1c676a;
   width: 100%;

@@ -14,7 +14,7 @@
     />
   </head>
   <body>
-     <header class="header">
+    <header class="header">
       <article class="logo">
         <h3 class="navn_logo"><a href="index.html">STAY OUTDOOR</a></h3>
         <div class="logo_nav">
@@ -37,7 +37,7 @@
               <li class="nav_item">
                 <a href="omOs.html" class="nav_link">OM OS</a>
               </li>
-              
+            </ul>
           </nav>
         </div>
       </article>
@@ -53,21 +53,21 @@
     </main>
     <footer></footer>
     <script>
-      const headingOne = document.querySelector("h1");
-
       const urlParams = new URLSearchParams(window.location.search);
       const id = urlParams.get("id");
       //console.log(id);
       let vandreElement;
 
       //const header = document.querySelector("header h2");
-      const url = "https://outdoor-0753.restdb.io/rest/stayoutdoor";
-      const options = { headers: { "x-apikey": "6139e63e43cedb6d1f97eee7" } };
+      const url = "https://outdoor-0753.restdb.io/rest/stayoutdoor/";
+      const options = {
+        headers: { "x-apikey": "6139e63e43cedb6d1f97eee7" },
+      };
 
       document.addEventListener("DOMContentLoaded", hentData);
 
       async function hentData() {
-        //Promise - data lover program at komme med date, imen det køre videre
+        //Promise - data lover program at komme med data, imen det køre videre
         const result = await fetch(url + id, options);
         vandreElement = await result.json();
         console.log(vandreElement);
@@ -75,18 +75,17 @@
       }
 
       function vis() {
-        document.querySelector(".single_content").textContent =
-          vandreElement.navn;
+        document.querySelector(".single_h2").textContent = vandreElement.navn;
 
         document.querySelector(".langbeskrivelse").textContent =
           vandreElement.langbeskrivelse;
 
-        document.querySelector("img").src = vandreElement.billede;
+        document.querySelector(".vandre_img").src = vandreElement.billede;
       }
 
-      document.querySelector(".back").addEventListener("click", () => {
-        window.history.back();
-      });
+      // document.querySelector(".back").addEventListener("click", () => {
+      //   window.history.back();
+      // });
     </script>
   </body>
 </html>
