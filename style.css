@@ -93,19 +93,19 @@ img {
 
   padding: 2rem;
 }
-/* nav-bar/filtereing på produktside */
-
-/* .front {
-  display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
-  grid-template-rows: 1fr 1fr 1fr;
-} */
 
 .front h1 {
-  grid-area: 3/1;
-}
-.front img {
   grid-area: 2/1;
+}
+.front a {
+  grid-area: 3/1;
+  border-bottom: 0.25rem solid white;
+  margin-bottom: 5rem;
+  transition: 250ms ease-in-out;
+}
+.front a:hover {
+  color: #f29c2b;
+  border-bottom: 0.25rem solid #f29c2b;
 }
 
 .front {
@@ -160,7 +160,6 @@ h1 {
   word-wrap: break-word;
   width: min-content;
   line-height: 8.5rem;
-  margin-bottom: 5rem;
 }
 
 h2 {
