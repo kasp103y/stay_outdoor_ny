@@ -31,6 +31,10 @@ footer {
   background-color: #0f0f0e;
   padding: 2rem;
 }
+.ikoner {
+  display: flex;
+  justify-content: center;
+}
 
 header nav ul {
   display: flex;
@@ -311,12 +315,7 @@ nav button:hover {
   }
 }
 /* *************************** Om side *************************** */
-.omSide section {
-  background-color: #e4ededb6;
-  border-radius: 20px;
-  padding: 10px;
-  margin: 10px;
-}
+
 .img_left_article {
   gap: 15px;
   padding: 5px;
@@ -327,17 +326,7 @@ nav button:hover {
   padding: 5px;
   margin: 10px;
 }
-.omSide h2 {
-  text-align: center;
-  font-size: 4.5vw;
-  margin: 2em;
-  color: white;
-  /* font-family: Baron Neue Bold; */
-}
-.omSide p,
-h3 {
-  color: black;
-}
+
 /* .omSide img {
   max-width: 50vw;
   height: auto;
