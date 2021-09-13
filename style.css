@@ -313,7 +313,6 @@ nav button:hover {
 }
 /* *************************** Om side *************************** */
 .omSide section {
-  background-color: #e4ededb6;
   border-radius: 20px;
   padding: 10px;
   margin: 10px;
@@ -357,7 +356,6 @@ img {
   }
 
   .om_side section {
-    background-color: #e4ededb6;
     border-radius: 20px;
     padding: 20px;
     margin: 1em;
