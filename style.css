@@ -65,12 +65,17 @@ header nav ul {
   color: white;
 }
 
+.index h3,
+.omSide h3 {
+  margin-top: 1rem;
+}
+
 li {
   list-style: none;
 }
 
 body {
-  background-image: url(baggrund.jpg);
+  background-image: url(background.jpg);
   background-attachment: fixed;
   background-position: 51% 71%;
   background-size: cover;
