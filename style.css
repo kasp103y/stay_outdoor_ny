@@ -56,18 +56,13 @@ header nav ul {
 .logo img {
   width: 6rem;
 }
-.logo img:hover path {
+.logo img:hover svg path {
   fill: #f29c2b;
   stroke: #f29c2b;
 }
 
 .logo h3 {
   color: white;
-}
-
-.index h3,
-.omSide h3 {
-  margin-top: 1rem;
 }
 
 li {
@@ -92,8 +87,7 @@ img {
   transition: 0.5ms ease-in;
 }
 
-.width,
-#single_content {
+.width {
   margin: 1rem;
   background-image: linear-gradient(
     to bottom right,
@@ -109,7 +103,7 @@ img {
 }
 
 .filter_nav {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .front h1 {
@@ -136,9 +130,9 @@ img {
 .container_forside {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
-  margin: 2rem;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  margin: 1.5rem;
   border-radius: 0.5rem;
 }
 
@@ -200,13 +194,13 @@ footer p {
   color: #fff;
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
-  font-size: 2rem;
 }
 
 p {
   font-family: "Oswald", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 2.5rem;
+  margin: 1.2rem 0;
 }
 
 .single_h2 {
@@ -294,14 +288,13 @@ nav button {
   }
 
   p {
-    font-size: 1rem;
+    font-size: 1.3rem;
     line-height: 1.7rem;
   }
 }
 
 @media (max-width: 800px) {
-  .container,
-  #single_container {
+  .container {
     display: block;
     padding: 1rem;
     margin: 1rem;
