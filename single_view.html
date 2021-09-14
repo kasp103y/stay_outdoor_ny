@@ -14,11 +14,10 @@
     />
   </head>
   <body>
-     <header class="header">
+    <header class="header">
       <article class="logo">
-         <a href="index.html"><img src="lillelogo_hvid.svg" alt="" /></a>
+        <a href="index.html"><img src="lillelogo_hvid.svg" alt="" /></a>
         <div class="logo_nav">
-         
           <nav class="nav_bar">
             <!-- <a href="index.html" class="logo">PORTFOLIO</a> -->
             <div class="hamburger">
@@ -37,30 +36,37 @@
               <li class="nav_item">
                 <a href="omOs.html" class="nav_link">OM OS</a>
               </li>
-              
+            </ul>
           </nav>
         </div>
       </article>
     </header>
     <main>
-     
       <section class="container" id="single_container">
         <article class="outdoor_content" id="single_content">
-           <button class="back">Tilbage</button>
+          <button class="back">Tilbage</button>
           <h2 class="single_h2"></h2>
           <img class="vandre_img" src="" alt="" />
           <p class="langbeskrivelse"></p>
         </article>
       </section>
     </main>
-      <footer>
+    <footer>
       <h4>FIND OS</h4>
-      <p>Fjerde bioark på venstre hånd nr. 6 </p>
+      <p>Fjerde bioark på venstre hånd nr. 6</p>
       <article class="ikoner">
-        <a href="facebook.com"><img src="ikoner/facebook.svg" alt="facebook logo"></a>
-         <a href="instagram.com"><img src="ikoner/insta.svg" alt="facebook logo"></a>
-          <a href="twitter.com"><img src="ikoner/twitter.svg" alt="facebook logo"></a>
-           <a href="snapchat.com"><img src="ikoner/snapchat.svg" alt="facebook logo"></a>
+        <a href="facebook.com"
+          ><img src="ikoner/facebook.svg" alt="facebook logo"
+        /></a>
+        <a href="instagram.com"
+          ><img src="ikoner/insta.svg" alt="facebook logo"
+        /></a>
+        <a href="twitter.com"
+          ><img src="ikoner/twitter.svg" alt="facebook logo"
+        /></a>
+        <a href="snapchat.com"
+          ><img src="ikoner/snapchat.svg" alt="facebook logo"
+        /></a>
       </article>
     </footer>
     <script>
@@ -97,6 +103,21 @@
       document.querySelector(".back").addEventListener("click", () => {
         window.history.back();
       });
+
+      const navMenu = document.querySelector(".nav_menu");
+      const burger = document.querySelector(".hamburger");
+
+      //window.addEventListener("load", sidenVises);
+      //function sidenVises() {
+      //  console.log("SidenVises");
+      //}
+
+      burger.addEventListener("click", mobil);
+
+      function mobil() {
+        burger.classList.toggle("open");
+        navMenu.classList.toggle("open");
+      }
     </script>
   </body>
 </html>
