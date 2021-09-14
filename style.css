@@ -65,11 +65,6 @@ header nav ul {
   color: white;
 }
 
-.index h3,
-.omSide h3 {
-  margin-top: 1rem;
-}
-
 li {
   list-style: none;
 }
@@ -136,7 +131,7 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 1.5rem;
-  padding: 1.2rem;
+  padding: 1.5rem;
   margin: 1.5rem;
   border-radius: 0.5rem;
 }
@@ -299,8 +294,7 @@ nav button {
 }
 
 @media (max-width: 800px) {
-  .container,
-  #single_container {
+  .container {
     display: block;
     padding: 1rem;
     margin: 1rem;
