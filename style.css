@@ -92,7 +92,7 @@ img {
   background-image: linear-gradient(
     to bottom right,
     rgba(255, 255, 255, 0.787),
-    rgba(128, 128, 128, 0.835)
+    rgba(131, 165, 148, 0.726)
   );
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
