@@ -54,9 +54,13 @@ header nav ul {
   transition: 250ms ease-in-out;
 }
 
+path {
+  transition: 250ms ease-in-out;
+}
+
 .logo svg {
-  width: 3rem;
-  height: 3rem;
+  width: 2.2rem;
+  height: 2.2rem;
   margin: 0;
   padding: 0;
 }
@@ -156,10 +160,6 @@ img {
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
-#single_menu:hover {
-  box-shadow: none;
-}
-
 a {
   font-size: 2rem;
   color: #fff;
@@ -210,11 +210,6 @@ p {
 .single_h2 {
   color: #0f0f0e;
   text-shadow: none;
-}
-
-#single_container {
-  display: flex;
-  justify-content: center;
 }
 
 nav {
@@ -348,12 +343,12 @@ img {
   }
 
   .logo svg {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
   }
 
   header {
-    padding: 2.5rem;
+    padding: 1.2rem;
   }
 
   .img_left_article {
