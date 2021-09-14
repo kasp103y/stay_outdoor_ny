@@ -51,12 +51,16 @@ header nav ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
+  transition: 250ms ease-in-out;
 }
 
-.logo img {
-  width: 4rem;
+.logo svg {
+  width: 3rem;
+  height: 3rem;
+  margin: 0;
+  padding: 0;
 }
-.logo img:hover svg path {
+.logo svg:hover path {
   fill: #f29c2b;
   stroke: #f29c2b;
 }
@@ -343,8 +347,9 @@ img {
     font-size: 2rem;
   }
 
-  .logo img {
-    width: 6rem;
+  .logo svg {
+    width: 4rem;
+    height: 4rem;
   }
 
   header {
