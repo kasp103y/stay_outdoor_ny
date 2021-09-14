@@ -24,7 +24,7 @@ img {
 /*Produkt billeder*/
 
 header {
-  padding: 2rem;
+  padding: 1rem;
   background-color: #0f0f0e;
   position: sticky;
   top: 0%;
@@ -54,7 +54,7 @@ header nav ul {
 }
 
 .logo img {
-  width: 6rem;
+  width: 4rem;
 }
 .logo img:hover svg path {
   fill: #f29c2b;
@@ -339,6 +339,14 @@ img {
     font-size: 2rem;
   }
 
+  .logo img {
+    width: 6rem;
+  }
+
+  header {
+    padding: 2.5rem;
+  }
+
   .img_left_article {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -421,7 +429,7 @@ img {
 .nav_menu {
   position: fixed;
   left: -100%;
-  top: 6.5rem;
+  top: 4rem;
   flex-direction: column;
   background-color: #0f0f0e;
   width: 100%;
