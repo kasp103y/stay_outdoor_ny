@@ -1,7 +1,5 @@
 const template = document.querySelector("template");
 const headingOne = document.querySelector("h1");
-const popUp = document.querySelector("#popup");
-const buttonLuk = document.querySelector("#popup button");
 
 const header = document.querySelector(".filtrering_h2");
 const url = "https://outdoor-0753.restdb.io/rest/stayoutdoor";
