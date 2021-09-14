@@ -172,7 +172,7 @@ h1 {
   color: #fff;
   font-size: 10rem;
   font-family: "Bebas Neue", cursive;
-  cursor: pointer;
+
   transition: 250ms ease-in-out;
   word-wrap: break-word;
   width: min-content;
