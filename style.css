@@ -56,7 +56,7 @@ header nav ul {
 .logo img {
   width: 6rem;
 }
-.logo img:hover path {
+.logo img:hover svg path {
   fill: #f29c2b;
   stroke: #f29c2b;
 }
