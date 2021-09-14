@@ -144,15 +144,20 @@ img {
   border-radius: 0.5rem;
 }
 
-.outdoor_content,
-#right_article,
-#left_article {
-  padding: 2rem;
+.outdoor_content {
+  padding: 1rem;
   transition: 500ms ease-in-out;
   cursor: pointer;
   border-radius: 0.5rem;
 }
 
+#right_article,
+#left_article {
+  padding: 0.5rem;
+  transition: 500ms ease-in-out;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
 .outdoor_content:hover,
 #right_article:hover,
 #left_article:hover {
@@ -217,7 +222,7 @@ nav {
   display: flex;
   justify-content: space-around;
   padding: 0 1rem;
-  gap: 1rem;
+  gap: 0.5rem;
   margin: 0.5rem 0;
 }
 
