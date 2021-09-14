@@ -436,8 +436,9 @@ img {
   height: 100vh;
   text-align: center;
   transition: 0.3s;
-  padding: 0 3rem 12rem 3rem;
-  z-index: 1000;
+  padding: 5rem 3rem 12rem 3rem;
+
+  z-index: -10;
 }
 .nav_menu.open {
   left: 0;
