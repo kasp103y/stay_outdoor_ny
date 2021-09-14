@@ -315,32 +315,17 @@ nav button {
   }
 }
 /* *************************** Om side *************************** */
-.omSide section {
+.om_side section {
   border-radius: 20px;
   padding: 10px;
   margin: 10px;
 }
-.img_left_article {
+.img_left_article,
+.text_left_article {
   gap: 15px;
-  padding: 5px;
-  margin: 10px;
+  padding: 1rem;
+  margin: 1.2rem;
 }
-.textLeftArticle {
-  gap: 15px;
-  padding: 5px;
-  margin: 10px;
-}
-
-/* .omSide img {
-  max-width: 50vw;
-  height: auto;
-  /* border-radius: 30px; 
-}
- .omSide p,
-h3,
-img {
-  padding: 5px;
-}  */
 
 @media (min-width: 800px) {
   /* Knap størrelse i desktop */
@@ -357,7 +342,8 @@ img {
     padding: 1.2rem;
   }
 
-  .img_left_article {
+  .img_left_article,
+  .text_left_article {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -371,14 +357,7 @@ img {
   .text_right {
     grid-column: 2/3;
   }
-  .text_left_article {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 1em;
-    padding: 1em;
-    margin: 3em;
-  }
+
   .text_left {
     grid-column: 1/2;
     grid-row: 1/2;
