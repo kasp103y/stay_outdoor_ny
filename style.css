@@ -172,6 +172,9 @@ a {
   text-decoration: none;
   font-family: "Bebas Neue", sans-serif;
 }
+button a {
+  color: #0f0f0e;
+}
 
 h1 {
   color: #fff;
