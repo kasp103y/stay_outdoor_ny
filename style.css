@@ -229,7 +229,7 @@ nav {
 button {
   background: none;
   border: none;
-  color: #fff;
+  color: #0f0f0e;
   padding: 0.2rem 0.4rem;
   text-align: center;
   text-decoration: none;
@@ -260,7 +260,7 @@ nav button {
 .valgt {
   background-color: white;
 
-  color: #f29c2b;
+  color: ##0f0f0e;
 }
 
 .mad_img {
