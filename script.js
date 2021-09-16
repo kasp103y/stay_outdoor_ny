@@ -58,7 +58,7 @@ function vis() {
       //Bestemt kategori eller alle objekter
       console.log(filter);
       let klon = template.cloneNode(true).content;
-      // const md = "-md.jpg";
+
       //Placer i HTML
 
       klon.querySelector("h3").textContent = vandreElement.navn;
