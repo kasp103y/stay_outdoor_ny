@@ -18,358 +18,6 @@ img {
   display: block;
 }
 
-.container img {
-  object-fit: cover;
-}
-/*Produkt billeder*/
-
-header {
-  padding: 1rem;
-  background-color: #0f0f0e;
-  position: sticky;
-  top: 0%;
-  z-index: 1000;
-}
-footer {
-  background-color: #0f0f0e;
-  padding: 2rem;
-}
-.ikoner {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
-header nav ul {
-  display: flex;
-  justify-content: space-around;
-
-  color: #fff;
-}
-
-.logo {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  transition: 250ms ease-in-out;
-}
-
-path {
-  transition: 250ms ease-in-out;
-}
-
-.logo svg {
-  width: 2.2rem;
-  height: 2.2rem;
-  margin: 0;
-  padding: 0;
-}
-.logo svg:hover path {
-  fill: #f29c2b;
-  stroke: #f29c2b;
-}
-
-.logo h3 {
-  color: white;
-}
-
-li {
-  list-style: none;
-}
-
-body {
-  background-image: url(background.jpg);
-  background-attachment: fixed;
-  background-position: 51% 71%;
-  background-size: cover;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16/9;
-}
-
-.outdoor_content {
-  border-radius: 0.5rem;
-  transition: 0.5ms ease-in;
-}
-
-.width {
-  margin: 1rem;
-  background-image: linear-gradient(
-    to bottom right,
-    rgba(255, 255, 255, 0.787),
-    rgba(131, 165, 148, 0.726)
-  );
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 0.5rem;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-.filter_nav {
-  padding: 1rem;
-}
-
-.front h1 {
-  grid-area: 2/1;
-}
-.front a {
-  grid-area: 3/1;
-  border-bottom: 0.25rem solid white;
-  margin-bottom: 5rem;
-  transition: 250ms ease-in-out;
-}
-.front a:hover {
-  color: #f29c2b;
-  border-bottom: 0.25rem solid #f29c2b;
-}
-
-.front {
-  margin: 12.5rem 5rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-}
-
-.container,
-.container_forside {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 1.5rem;
-  padding: 1.5rem;
-  margin: 1.5rem;
-  border-radius: 0.5rem;
-}
-
-.outdoor_content {
-  padding: 1rem;
-  transition: 500ms ease-in-out;
-  cursor: pointer;
-  border-radius: 0.5rem;
-}
-
-#right_article,
-#left_article {
-  padding: 0.5rem;
-  transition: 500ms ease-in-out;
-  cursor: pointer;
-  border-radius: 0.5rem;
-}
-.outdoor_content:hover,
-#right_article:hover,
-#left_article:hover {
-  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
-    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-}
-
-a {
-  font-size: 2rem;
-  color: #fff;
-  text-decoration: none;
-  font-family: "Bebas Neue", sans-serif;
-}
-button a {
-  color: #0f0f0e;
-}
-
-h1 {
-  color: #fff;
-  font-size: 10rem;
-  font-family: "Bebas Neue", cursive;
-
-  transition: 250ms ease-in-out;
-  word-wrap: break-word;
-  width: min-content;
-  line-height: 8.5rem;
-}
-
-h2 {
-  text-align: center;
-  margin: 1.5rem;
-  font-size: 3.2rem;
-  font-family: "Bebas Neue", cursive;
-  color: white;
-}
-h3 {
-  margin: 1.5rem 0 1.5rem 0;
-  font-size: 2rem;
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 700;
-
-  color: #0f0f0e;
-}
-
-footer p {
-  color: #fff;
-  font-family: "Bebas Neue", sans-serif;
-  text-align: center;
-}
-
-p {
-  font-family: "Oswald", sans-serif;
-  font-size: 1.6rem;
-  line-height: 2.5rem;
-  margin: 1.2rem 0;
-}
-
-.single_h2 {
-  color: #0f0f0e;
-  text-shadow: none;
-}
-
-nav {
-  display: flex;
-  justify-content: space-around;
-  padding: 0 1rem;
-  gap: 0.5rem;
-  margin: 0.5rem 0;
-}
-
-button {
-  background: none;
-  border: none;
-  color: #0f0f0e;
-  padding: 0.2rem 0.4rem;
-  text-align: center;
-  text-decoration: none;
-  font-size: 2rem;
-  transition: 250ms ease-in-out;
-
-  background-color: #f29c2b;
-  font-family: "Bebas Neue";
-  cursor: pointer;
-  border-radius: 0.2rem;
-}
-button:hover {
-  box-shadow: rgba(0, 0, 0, 0.349) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-nav button {
-  font-size: 2rem;
-}
-
-.logo_nav {
-  display: flex;
-  justify-content: space-around;
-  gap: 2rem;
-}
-
-.valgt {
-  background-color: white;
-
-  color: #0f0f0e;
-}
-
-.mad_img {
-  border-radius: 0.5rem;
-}
-
-#popup_section {
-  display: flex;
-  justify-content: center;
-}
-
-@media (max-width: 600px) {
-  nav button {
-    outline: none;
-    font-size: 1.2rem;
-  }
-
-  h1 {
-    font-size: 6.5rem;
-  }
-  h2 {
-    font-size: 2rem;
-  }
-  h3 {
-    font-size: 1.6rem;
-  }
-
-  footer p {
-    font-size: 2rem;
-  }
-
-  p {
-    font-size: 1.3rem;
-    line-height: 1.7rem;
-  }
-}
-
-@media (max-width: 800px) {
-  .container {
-    display: block;
-    padding: 1rem;
-    margin: 1rem;
-  }
-
-  .front {
-    display: block;
-    margin: 12.5rem 2rem;
-  }
-
-  .container_forside {
-    display: block;
-  }
-}
-/* *************************** Om side *************************** */
-.om_side section {
-  border-radius: 20px;
-  padding: 10px;
-  margin: 10px;
-}
-.img_left_article,
-.text_left_article {
-  gap: 15px;
-  padding: 1rem;
-  margin: 1.2rem;
-}
-
-@media (min-width: 800px) {
-  /* Knap størrelse i desktop */
-  nav button {
-    font-size: 2rem;
-  }
-
-  .logo svg {
-    width: 3rem;
-    height: 3rem;
-  }
-
-  header {
-    padding: 1.2rem;
-  }
-
-  .img_left_article,
-  .text_left_article {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 1em;
-    padding: 1em;
-    margin: 3em;
-  }
-  .img_left {
-    grid-column: 1/2;
-  }
-  .text_right {
-    grid-column: 2/3;
-  }
-
-  .text_left {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-  .img_right {
-    grid-column: 2/3;
-  }
-}
-
 /* BURGER MENU*/
 
 .nav_bar {
@@ -413,11 +61,6 @@ nav button {
   transition: ease-in-out 250ms;
 }
 
-.nav_link:hover {
-  color: #f29c2b;
-  border-bottom: 0.25rem solid #f29c2b;
-}
-
 .nav_menu {
   position: fixed;
   left: -100%;
@@ -429,7 +72,7 @@ nav button {
   text-align: center;
   transition: 0.3s;
   padding: 5rem 3rem 12rem 3rem;
-
+  /*z-index for at burgermenuen ikke skære navbaren over */
   z-index: -10;
 }
 .nav_menu.open {
@@ -444,13 +87,6 @@ nav button {
   transition: ease-in-out 250ms;
 }
 
-.hamburger:hover {
-  margin: 0 0.25rem;
-}
-.hamburger:hover .bar {
-  background-color: #f29c2b;
-}
-
 .hamburger.open .bar:nth-child(2) {
   opacity: 0;
 }
@@ -460,4 +96,378 @@ nav button {
 
 .hamburger.open .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
+}
+
+/*burger slut */
+
+.container img {
+  object-fit: cover;
+  /*Produkt billeder*/
+}
+
+header {
+  padding: 1rem;
+  background-color: #0f0f0e;
+  position: sticky;
+  top: 0%;
+  z-index: 1000;
+}
+footer {
+  background-color: #0f0f0e;
+  padding: 2rem;
+}
+.ikoner {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  gap: 1rem;
+}
+
+.ikon svg {
+  height: 3rem;
+  width: 3rem;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  transition: 250ms ease-in-out;
+}
+
+path {
+  transition: 250ms ease-in-out;
+  /*Path henviser til SVG'en i HTML*/
+}
+
+.logo svg {
+  width: 2.2rem;
+  height: 2.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.logo h3 {
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-image: url(background.jpg);
+  background-attachment: fixed;
+  background-position: 51% 71%;
+  background-size: cover;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.blur_backdrop {
+  margin: 0.5rem;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.787),
+    rgba(131, 165, 148, 0.726)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.filter_nav {
+  padding: 1rem;
+}
+
+.filter_nav h3 {
+  text-align: center;
+}
+
+.container {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+/*Front er forsiden - index.html*/
+.front {
+  margin: 12.5rem 2rem;
+}
+
+.front h1 {
+  grid-area: 2/1;
+}
+.front a {
+  grid-area: 3/1;
+  border-bottom: 0.25rem solid white;
+  margin-bottom: 5rem;
+  transition: 250ms ease-in-out;
+}
+
+.outdoor_content {
+  transition: 500ms ease-in-out;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  transition: 0.5ms ease-in;
+}
+
+#right_article,
+#left_article {
+  padding: 0.5rem;
+  transition: 500ms ease-in-out;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+a {
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+}
+button a {
+  color: #0f0f0e;
+}
+
+nav button {
+  font-size: 1.2rem;
+}
+
+h1 {
+  color: #fff;
+  font-size: 6.5rem;
+  font-family: "Bebas Neue", cursive;
+
+  transition: 250ms ease-in-out;
+  word-wrap: break-word;
+  width: min-content;
+  line-height: 6rem;
+}
+
+h2 {
+  text-align: center;
+  margin: 1.5rem;
+  font-size: 2rem;
+  font-family: "Bebas Neue", cursive;
+  color: white;
+}
+h3 {
+  margin: 1.5rem 0 1.5rem 0;
+  font-size: 1.6rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+
+  color: #0f0f0e;
+}
+
+footer p {
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+}
+
+p {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  margin: 1.2rem 0;
+}
+footer p {
+  font-size: 2rem;
+}
+
+.single_h2 {
+  color: #0f0f0e;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 1rem;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+button {
+  background: none;
+  border: none;
+  color: #0f0f0e;
+  padding: 0.2rem 0.4rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: 250ms ease-in-out;
+  background-color: #f29c2b;
+  font-family: "Bebas Neue";
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
+
+.logo_nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.valgt {
+  background-color: white;
+
+  color: #0f0f0e;
+}
+
+/* *************************** Om side *************************** */
+.om_side section {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+.img_left_article,
+.text_left_article {
+  gap: 15px;
+  padding: 1rem;
+  margin: 1.2rem;
+}
+
+@media (min-width: 800px) {
+  /*Desktop version*/
+  nav button {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 10rem;
+    line-height: 8.5rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+
+  .logo svg {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  header {
+    padding: 2.5rem;
+  }
+
+  .front {
+    margin: 12.5rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+
+  .container,
+  .container_forside {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    border-radius: 0.5rem;
+  }
+
+  .blur_backdrop {
+    margin: 2rem;
+  }
+  .outdoor_content {
+    padding: 1rem;
+  }
+
+  .img_left_article,
+  .text_left_article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 3rem;
+  }
+  .img_left {
+    grid-column: 1/2;
+  }
+  .text_right {
+    grid-column: 2/3;
+  }
+
+  .text_left {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .img_right {
+    grid-column: 2/3;
+  }
+
+  /* Hover effekter */
+
+  /*Hamburger hover efekkter */
+  /*Header hovers */
+
+  .hamburger:hover .bar {
+    background-color: #f29c2b;
+  }
+  .hamburger:hover {
+    margin: 0 0.25rem;
+  }
+
+  .nav_link:hover {
+    color: #f29c2b;
+    border-bottom: 0.25rem solid #f29c2b;
+  }
+  .front a:hover {
+    color: #f29c2b;
+    border-bottom: 0.25rem solid #f29c2b;
+  }
+
+  .logo svg:hover path {
+    fill: #f29c2b;
+  }
+
+  .ikon svg:hover path {
+    fill: #f29c2b;
+  }
+
+  /*Hover effekt direkte på SVG*/
+
+  /* Knapper hovers*/
+
+  button:hover {
+    box-shadow: rgba(0, 0, 0, 0.349) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  /*article hovers*/
+
+  .outdoor_content:hover,
+  #right_article:hover,
+  #left_article:hover {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+      rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
 }
